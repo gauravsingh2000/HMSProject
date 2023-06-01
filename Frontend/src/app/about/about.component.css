@@ -1,0 +1,141 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+body{
+    font-family: Calibri;
+    /* background-color: white; */
+    background-image: url("https://thumbs.dreamstime.com/b/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed-male-senior-female-patient-32154012.jpg");
+}
+.logo {
+    font-weight: bold;
+    color: #a47533;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+    left: 20%;
+}
+.main-header-1 > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px;
+}
+.navigation {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 8px 32px;
+    z-index: 1;
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    
+}
+.main-items{
+    font-size: 12pt;
+    font-weight: bold;
+    line-height: 40px;
+}
+.navigation > a {
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}
+.content {
+    /* background-image: url("../../assets/images/pics/bg1.jpeg"); */
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+}
+.head1 {
+    position: relative;
+    top: 45%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 800;
+}
+.amenities {
+    height: 300px;
+    position: relative;
+    top: 5%;
+    background-color: white;
+}
+.ul-list1 {
+    text-align: center;
+    list-style: none;
+    width: auto; 
+    background-color: beige;
+    background-position: center;
+}
+.main-content {
+    display: inline-block;
+    background-color: white;
+    padding: 16px 16px;
+    margin: auto;
+    height: 800px;
+    width: 100%;
+    /* background-size: cover; */
+    /* background-image: url("https://media.gettyimages.com/photos/empty-beds-in-a-hospital-ward-picture-id1214357163?s=612x612"); */
+}
+.main-content > i {
+    margin: 8px;
+    padding: 8px;
+    display: inline-block;
+
+}
+.para1 {
+    /* background-color: rgb(249, 248, 247); */
+    padding: 8px;
+    margin: 16px;
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    
+}
+h4 {
+    margin-left: 28px;
+}
+/* .main-map {
+
+} */
+.map-details {
+    margin: 46px;
+    text-align: center;
+    border: 0.5px soild white;
+}
+.map-heading {
+    margin: 32px;
+    padding: 8px 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22pt;
+}
+.map-url{
+    width: 100%;
+    padding: 16px;
+    margin: 16px;
+}
+
+.foot > p {
+    text-align: left;
+    display: inline-block;
+}
+
+.foot1 {
+    margin-top: 16px;
+    /* position: absolute;
+    left:3%; */
+    font-size: small;
+    text-align: center;
+}
+.foot2 {
+    /* position: absolute;
+    left:11.5%; */
+    font-size: small;
+    text-align: center;
+}

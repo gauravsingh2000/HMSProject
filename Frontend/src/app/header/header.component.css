@@ -1,0 +1,77 @@
+.header1 {
+    background-color:rgba(242, 250, 250, 0.979);
+    text-align: center;
+    
+}
+.logo {
+    font-weight: bold;
+    color: rgb(0, 0, 8);
+    font-size: 50px;
+    text-decoration: none;
+    position:relative;
+    
+    top: 2%;
+    line-height: 40px;
+    text-align: center;
+}
+.header1 > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px;
+}
+.navigation {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 8px 60px;
+    z-index: 1;
+    display: inline-block;
+    text-align: right;
+    width: fit-content;
+    margin-left: 49%;
+    font-size: 25px;
+}
+.item1{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+    width: max-content;
+    
+}
+
+.navigation {
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}
+.content {
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+}
+.head1 {
+    position: relative;
+    top: 45%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 800;
+}
+.amenities {
+    height: 300px;
+    position: relative;
+    top: 5%;
+    background-color: beige;
+}
+.ul-list1 {
+    text-align: center;
+    list-style: none;
+    width: auto; 
+    background-color: beige;
+    background-position: center;
+}

@@ -1,0 +1,38 @@
+<h2>Discharge List </h2><a href="doctor-home"><h3>GoBack</h3></a>
+
+<div class="bgimage" style="width: 100%; height: 696.5px;">
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            
+            <th>patientname</th>
+            <th>doctorname</th>
+            <th>Discharged_date & time </th>
+            <!--><th>Discharged_time</th><-->
+            <th>Disease</th>
+            <!--><th>Confirmation</th><-->
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let dischargedpatient of dischargedpatient">
+            
+            <td>{{dischargedpatient.p_name}}</td>
+            <td>{{dischargedpatient.d_name}}</td>
+            <td>{{dischargedpatient.d_date}}</td>
+            <!--><td>{{dischargedpatient.d_time}}</td><-->
+             <td>{{dischargedpatient.disease}}</td>
+             <!--><td>{{dischargedpatient.confirm}}</td>M<-->
+                <!-- <td>
+                    <button (click) ="updateAppointment(appointment.ap_id)" class="btn btn-info">Update</button>
+                
+                
+                    <button (click) ="deleteAppointment(appointment.ap_id)" class="btn btn-info" style="margin-left:10px">Delete</button>
+                </td>-->
+        </tr>
+    </tbody>
+
+</table>
+</div>
+
+

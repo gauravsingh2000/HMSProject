@@ -1,0 +1,34 @@
+<div class="full"style="width: 100%; height: 696.5px;">
+<div class="container" style="max-width: 600px;background-color: rgb(173, 216, 202);">
+    <h2>Admin login</h2><a href=""><h3>GoBack</h3></a>
+    <form #loginform="ngForm" (ngSubmit)="loginAdmin(loginform)">
+      <small class="text-danger">{{msg}}</small>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control"  placeholder="Enter email" name="email" id="email" [(ngModel)]="admin.emailId" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        #email="ngModel" 
+        [class.is-invalid]="email.invalid && email.touched">
+        
+         <small class="text-danger"[class.d-none]="email.valid || email.untouched">Email Id is required field</small> 
+       </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter password" name="password" [(ngModel)]="admin.password" required #password="ngModel"
+        [class.is-invalid]="password.invalid && password.touched"
+        >
+        <small class="text-danger"[class.d-none]="password.valid || password.untouched">password is required field</small>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+    
+      <button type="submit" class="btn btn-info" value="Login">login &nbsp; </button>&nbsp;
+  
+      <button type="reset" class="btn btn-info">reset</button>
+    </form>
+    <!-- <small class="float-right" (click)="gotoregistration()"> admin ? signup here</small> -->
+    <a href="registration">signup</a>
+    
+  </div>
+</div>
+  <router-outlet></router-outlet>

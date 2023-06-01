@@ -1,0 +1,37 @@
+
+
+<div class="bgimage" style="width: 100%; height: 696.5px;">
+    <h2>Patients-List </h2><a href="adminmainpage" ><h3>GoBack</h3></a>
+<table class="table table-stripped table-hover "    border="2" >
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>gender</th>
+            <th>username</th>
+            <th>password</th>
+            <th>contact_no</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let patient of patients">
+            <td>{{patient.p_id}}</td>
+            <td>{{patient.p_name}}</td>
+            <td>{{patient.p_gender}}</td>
+            <td>{{patient.username}}</td>
+            <td>{{patient.password}}</td>
+                <td>{{patient.p_contact_no}}</td>
+                <!-- <td>{{d.specialization}}</td> -->
+                <td>
+                    <!-- <button (click) ="updatePatients(patient.p_id)" class="btn btn-info">Update</button> -->
+                
+                
+                    <button (click) ="deletePatients(patient.p_id)" class="btn btn-info" style="margin-left:10px">Delete</button>
+                </td>
+        </tr>
+    </tbody>
+
+</table>
+</div>
+

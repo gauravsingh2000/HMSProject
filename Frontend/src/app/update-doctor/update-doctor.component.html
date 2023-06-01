@@ -1,0 +1,71 @@
+<div class="bgimage" style="width: 100%; height: 696.5px;">
+    <a href="adminmainpage">GoBack</a>
+<div class="login-div" align="left">
+    <h3>Update Doctor</h3>
+    <form #Registerform="ngForm" (ngSubmit)="onSubmit()">
+    <table class="loginform">
+                <tr>
+                    <td><label for="name">Full Name: </label></td>
+                    <td><input type="text" id="name" name="d_name" class="searchTextField" placeholder="Enter Full Name" [(ngModel)]="doctorlist.d_name" #d_name="ngModel"
+                    /></td>	
+                </tr><br>
+                <tr>
+                    <td><label for="address">Address: </label></td>
+                    <td><input type="text" id="address" name="address" class="searchTextField" placeholder="Enter Address" [(ngModel)]="doctorlist.address" #address="ngModel"
+                    /></td>	
+                </tr><br>
+                <tr>
+                    <td><label for="contact">Contact: </label></td>
+                    <td><input type="text" id="contact" name="contact_no" class="searchTextField" placeholder="Enter Contact" [(ngModel)]="doctorlist.contact_no" #contact_no="ngModel"
+                    /></td>	
+                </tr><br>
+                <tr>
+                    <td><label for="gender">Gender: </label></td>
+                    <td><input type="text" id="gender" name="gender" class="searchTextField" placeholder="Enter Gender" [(ngModel)]="doctorlist.gender" #gender="ngModel"
+                    /></td>	
+                </tr><br>
+                <tr>
+                    <td><label for="username">Username: </label></td>
+                    <td><input type="text" id="username" name="username" class="searchTextField" placeholder="Enter Username" [(ngModel)]="doctorlist.username" #username="ngModel"
+                    /></td>	
+                </tr><br>
+                <tr>
+                    <td><label for="password">Password: </label></td>
+                    <td><input type="password" id="password" name="password" class="searchTextField" placeholder="Enter Password" [(ngModel)]="doctorlist.password" #password="ngModel"
+                    /></td>
+                </tr><br>
+                <tr>
+                    <td><label for="spl">Specialization: </label></td>
+                    <td><input type="text" id="specialization" name="specialization" class="searchTextField" placeholder="Enter Specialization" [(ngModel)]="doctorlist.specialization" #specialization="ngModel"
+                    /></td>	
+                </tr><br> 
+                <tr>
+                    <td><label for="experiance">Experiance: </label></td>
+                    <td><input type="text" id="experiance" name="experiance" class="searchTextField" placeholder="Enter Experiance" [(ngModel)]="doctorlist.experiance" #experiance="ngModel"
+                    /></td>	
+                </tr><br> 
+                <tr>
+                    <td><label for="salary"> Expected Salary: </label></td>
+                    <td><input type="text" id="salary" name="salary" class="searchTextField" placeholder="Enter Salary" [(ngModel)]="doctorlist.salary" #salary="ngModel"
+                    /></td>	
+                </tr><br> 
+                <tr>
+                    <td><label for="accept">Accepet/Reject: </label></td>
+                    <td><input type="text" id="accept" name="accept" class="searchTextField" placeholder="Enter Accept/reject" [(ngModel)]="doctorlist.accept" #accept="ngModel"
+                    /></td>	
+                </tr><br>                
+                <tr> 
+                    <td colspan="2" align="center"><br>
+                    <input type="submit" value="submit" class="actionBtn"></td>
+                </tr><br>
+
+                <!-- <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="button" 
+                   
+                     class="actionBtn" (click)="registerUser()">Register</button>
+                  </div> -->
+                  
+    </table>   
+    </form> 
+ </div>
+ </div>

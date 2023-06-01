@@ -1,0 +1,27 @@
+<a class="nav-link"  href="patienthomepage"><b>homepage</b></a>
+<h2 style="text-align:center">Doctors-list </h2>
+
+<div class="image-background" >
+<div class="bgimage" style="width: 100%; height: 696.5px;">
+<table class="table table-stripped table-hover"   >
+    <thead>
+        <tr style="font-size:large;">
+            <th>d_name</th>
+            <th>contact_no</th>
+            <th>specialization</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let doctor of doctors">
+           
+            <td>{{doctor.d_name}}</td>
+             <td>{{doctor.contact_no}}</td>
+            <td>{{doctor.specialization}}</td>
+        </tr>
+    </tbody>
+
+</table>
+
+
+</div>
+</div>

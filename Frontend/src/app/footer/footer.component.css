@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    height: 260px;
+    bottom: 0;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .foot {
+    width: 20%;
+    height: auto;
+    color: black;
+    margin: 20px 30px;
+    font-size: 12pt;
+  }
+  .para {
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+  }
+  
+  .lis-item {
+    text-decoration: none;
+    margin: 10px 0;
+  }
+  .lis-item a {
+    color: white;
+    font-size: 16px;
+  }
+  .foot > p {
+    text-align: left;
+    display: inline-block;
+}
+
+.foot1 {
+    /* position: absolute;
+    left:3%; */
+    font-size: small;
+    text-align: left;
+}
+.foot2 {
+    /* position: absolute;
+    left:11.5%; */
+    font-size: small;
+    text-align: center;
+}

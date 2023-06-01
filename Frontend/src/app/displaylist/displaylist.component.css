@@ -1,0 +1,18 @@
+.image-background{
+    background-image: url("https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?cs=srgb&dl=pexels-pixabay-40568.jpg&fm=jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.bgimage{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.table{
+    height: 200px;
+    width:90%;
+    text-align: center;
+    
+}

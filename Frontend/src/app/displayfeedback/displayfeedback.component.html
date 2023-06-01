@@ -1,0 +1,29 @@
+<p></p>
+<h2 style="text-align:center">Feedback-list </h2><a href="adminmainpage" ><h3>GoBack</h3></a>
+
+<div class="image-background" >
+<div class="bgimage" style="width: 100%; height: 696.5px;">
+<table class="table table-stripped" border="2"   >
+    <thead>
+        <tr style="font-size:large;">
+            <th>id</th>
+            <th>PatientName</th>
+            <th>DoctorName</th>
+            <th>comments</th>
+            <th>feedback_id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let feedback of feedbacks">
+            <td>{{feedback.p_id}}</td>
+            <td>{{feedback.p_name}}</td>
+            <td>{{feedback.d_name}}</td>
+            <td>{{feedback.p_comments}}</td>
+            <td>{{feedback.feedback_id}}</td>
+            
+        </tr>
+    </tbody>
+
+</table>
+</div>
+</div>

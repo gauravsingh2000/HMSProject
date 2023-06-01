@@ -1,0 +1,36 @@
+<app-header></app-header>
+<router-outlet></router-outlet>
+
+<div class="bgimage" style="width: 100%; height: 695px;">
+
+<div class="admin-main">
+    <h1 style="color: black; padding-top: 35px;">Patient Login</h1><br>
+    <h3 style="color: black;">Please Login to proceed</h3><br><br>
+    
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <div class="login-div" align="center">
+        <table class="loginform">
+            <tr>
+                <td><label for="username">Username: &nbsp;</label></td>
+                <td><input type="email" id="username" name="username" 
+                    class="searchTextField" placeholder="Enter Username" ngModel> 
+                </td>	 
+            </tr><br>
+            <tr>
+                <td><label for="password">Password: &nbsp;</label></td>
+                <td><input type="password" id="password" name="password"
+                    class="searchTextField" placeholder="Enter Password" ngModel>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><br>
+                <input type="submit" value="Login" class="actionBtn"></td>
+            </tr>
+            </table>
+        </div>
+    </form>
+    <br>
+    <h3 class="newuser">New User? <a [routerLink]="['/patientsignup']">Sign Up</a></h3>
+</div>
+
+</div>

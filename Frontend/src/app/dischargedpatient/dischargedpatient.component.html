@@ -1,0 +1,71 @@
+<app-header></app-header>
+<div class="bgimage" style="width: 100%; height: 690px;">
+
+<div class="patient-form"> <br>
+  <h2 style="text-align: center; margin-top: 10px;"> </h2>
+<!-- <form #Registerform="ngForm" (ngSubmit)="registerAppointments()"> -->
+  <form>
+  <fieldset>
+    <form #Registerform="ngForm" (ngSubmit)=" registerDischargedpatient()">
+    <div class="p-form">
+        
+       <label>
+        Patient Name
+        <input type="text" name="p_name" required [(ngModel)]="dischargedpatient.p_name" #pname="ngModel">
+      </label> 
+      <br><br>
+      <label>
+        Doctor Name
+        <input type="text" name="d_name" required [(ngModel)]="dischargedpatient.d_name" #dname="ngModel">
+      </label>
+    </div> 
+    <div class="p-form">
+    </div>
+    <br>
+  
+   
+    <div class="p-form">
+      <label>
+        Date 
+        <input type="datetime-local" name="d_date" required [(ngModel)]="dischargedpatient.d_date" #d_date="ngModel">
+      </label>
+    </div> <br>
+    <!-- <div class="p-form" >
+      <label>
+          Time
+          <input type="time" name="d_time" required [(ngModel)]="dischargedpatient.d_time" #d_time="ngModel">
+        </label></div> <br>  -->
+    <div class="p-form" >
+      <label>
+          Disease/Problem
+          <input type="text" name="disease" required [(ngModel)]="dischargedpatient.disease" #disease="ngModel">
+        </label> <br> <br>
+        <label>
+         Confirmation
+         <input type="text" name="confirm" required [(ngModel)]="dischargedpatient.confrim" #confirm="ngModel" required>
+        </label>
+    </div> <br>
+    <div class="gender-details">
+  
+    
+   
+      </div>
+      
+   <br>
+  <div class="btns">
+    <input type="text" name="_gotcha" value="" style="display:none;">
+    <input type="submit" value="Submit Request">
+  </div>
+  </form>
+  </fieldset>
+
+  <li class="nav-item active">
+    <a class="nav-link"  href="patienthomepage"><b>homepage</b></a>
+  </li>
+
+</form>
+
+</div>
+</div>
+
+
